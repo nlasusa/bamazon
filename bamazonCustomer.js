@@ -25,9 +25,9 @@ var display = function() {
  
     var table = new Table({
         //my cli-table2 npm settings 
-        head: ["Product Id", "Product Description", "Department","Cost"],
-        colWidths: [12, 30, 20, 8],
-        colAligns: ["center", "left", "left", "right"],
+        head: ["Product Id", "Product Description", "Cost"],
+        colWidths: [12, 40, 10],
+        colAligns: ["center", "left", "right"],
         style: {
             head: ["aqua"],
             compact: true 
@@ -35,7 +35,7 @@ var display = function() {
     });
     // for loop that uses length of result and pushes product name and price
     for (var i = 0; i < res.length; i++) {
-        table.push([res[i].item_id, res[i].product_name, res[i].department_name, res[i].price]);
+        table.push([res[i].item_id, res[i].product_name, res[i].price]);
     }
     console.log(table.toString()); 
     console.log("");
