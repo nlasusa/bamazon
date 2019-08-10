@@ -14,13 +14,14 @@ In this activity, I created an Amazon-like storefront with the MySQL skills and 
 
 ## What bamazonCustomer.js does
 - Prints the products, id's, department and stock quantity in the store
- ![screenshot1](1.png)
-
-
 - Prompts the customer which product they would like to purchase by ID number
+ ![screenshot1](1.png)
 - Asks for the quantity 
         - if there is a sufficient amount of the product in stock, the purchase will go through and the customer will recieve a log of the item they bought, quantity and the total cost. Then it will update the stock quantity to reflect the amount purchase.
+         ![screenshot2](2.png)
+          ![screenshot3](3.png)
         - if there is not enough of the product in stock, it will tell the user that there isn't enough of that product and the amount we do have.
+           ![screenshot4](4.png)
 
 
 
